@@ -14,7 +14,7 @@ import TVs from "./pages/TVs"
 
 function App() {
   let [search, setSearch] = useState('')
-  let [message, setMessage] = useState('Message here')
+  let [message, setMessage] = useState('Search Message here')
   let [data, setData] = useState([])
 
   useEffect(() => {
@@ -50,7 +50,7 @@ function App() {
           <Route path="/tvs" element={<TVs data={data}/>} />
         </Routes>
       </div>
-      
+      {message}
     </Container>
   );
 }
