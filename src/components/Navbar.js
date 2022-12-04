@@ -1,6 +1,7 @@
 
 import { Container, Nav, Navbar, NavDropdown, Button} from "react-bootstrap"
 import { Link } from "react-router-dom"
+import SearchBar from "./SearchBar";
 
 function NavbarComponent() {
 
@@ -20,6 +21,7 @@ function NavbarComponent() {
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
+            <SearchBar />
           </Container>
           <Button>Cart</Button>
         </Navbar>
