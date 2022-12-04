@@ -1,6 +1,6 @@
 
-import { Container, Nav, Navbar, NavDropdown, NavLink } from "react-bootstrap"
-import { Routes, Route, Link } from "react-router-dom"
+import { Container, Nav, Navbar, NavDropdown, Button} from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 function NavbarComponent() {
 
@@ -21,6 +21,7 @@ function NavbarComponent() {
               </Nav>
             </Navbar.Collapse>
           </Container>
+          <Button>Cart</Button>
         </Navbar>
       );
 }
