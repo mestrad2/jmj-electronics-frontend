@@ -1,5 +1,4 @@
-import { Row, Col } from 'react-bootstrap'
-import Product from '../components/ProductDisplay'
+import ProductDisplay from "../components/ProductDisplay"
 
 function Appliances(props) {
     return (

@@ -1,3 +1,5 @@
+import ProductDisplay from "../components/ProductDisplay"
+
 function Phones(props) {
     return (
         <h1>Phones</h1>

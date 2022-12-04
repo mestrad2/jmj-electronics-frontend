@@ -1,3 +1,5 @@
+import ProductDisplay from "../components/ProductDisplay"
+
 function Computers(props) {
     return (
         <h1>Computers</h1>

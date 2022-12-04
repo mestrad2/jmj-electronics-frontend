@@ -1,3 +1,5 @@
+import ProductDisplay from "../components/ProductDisplay"
+
 function TVs(props) {
     return (
         <h1>TVs</h1>

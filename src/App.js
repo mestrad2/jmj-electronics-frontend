@@ -17,11 +17,13 @@ function App() {
   let [message, setMessage] = useState('Search Message here')
   let [data, setData] = useState([])
 
+  //implement database api here for search
+
   useEffect(() => {
     if(search) {
       const fetchData = async() => {
         document.title = `${search}`
-        const response = await fetch(search)
+        const response = await fetch(search) //include database api here to search
         const resData = await response.json()
         if(resData.results.length > 0) {
           return setData(resData.results)
