@@ -40,17 +40,17 @@ function App() {
 
   return (
     <Container>
-      <NavbarComponent></NavbarComponent>
+      <NavbarComponent startSearch={startSearch}></NavbarComponent>
       <div className ="routerContainer">
         <Routes>
           <Route path="/" element={<Store/>} />
-          <Route path="/appliances" element={<Appliances/>} />
-          <Route path="/computers" element={<Computers/>} />
-          <Route path="/phones" element={<Phones/>} />
-          <Route path="/tvs" element={<TVs/>} />
-          <Route path="/about" element={<Store/>} />
+          <Route path="/appliances" element={<Appliances data={data}/>} />
+          <Route path="/computers" element={<Computers data={data}/>} />
+          <Route path="/phones" element={<Phones data={data}/>} />
+          <Route path="/tvs" element={<TVs data={data}/>} />
         </Routes>
       </div>
+      
     </Container>
   );
 }

@@ -3,7 +3,7 @@ import { Container, Nav, Navbar, NavDropdown, Button} from "react-bootstrap"
 import { Link } from "react-router-dom"
 import SearchBar from "./SearchBar";
 
-function NavbarComponent() {
+function NavbarComponent(props) {
 
     return (
         <Navbar bg="light" expand="lg">
@@ -21,7 +21,7 @@ function NavbarComponent() {
                 </NavDropdown>
               </Nav>
             </Navbar.Collapse>
-            <SearchBar />
+            <SearchBar startSearch = {props.startSearch} />
           </Container>
           <Button>Cart</Button>
         </Navbar>
